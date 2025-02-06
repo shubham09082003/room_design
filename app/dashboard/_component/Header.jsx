@@ -5,12 +5,14 @@ import Image from 'next/image'
 import { UserButton } from '@clerk/nextjs'
 import { UserDetailContext } from '@/app/_context/UserDetailContext';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 function Header() {
     const {userDetail, setUserDetail} = useContext(UserDetailContext);
     
   return (
     <div className = "p-5 shadow-md flex justify-between items-center">
+        <Link href='/dashboard'>
         <div className='flex items-center gap-2'>
             <Image src="/logo.svg" alt="logo" width={40} height={40}/>
             <h2 className='font-bold text-lg'>
@@ -18,6 +20,7 @@ function Header() {
                 Room Design
             </h2>
         </div>
+        </Link>
 
         <Button variant="ghost" className="rounded-full text-primary">Buy More Credits</Button>
 

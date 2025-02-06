@@ -8,10 +8,8 @@ export async function POST(req) {
     const { user } = await req.json();
 
     try{
-        console.log("inside verify user");
         const userExists = await db.select().from(User)
             .where(eq(User.email, user?.primaryEmailAddress?.emailAddress));
-            console.log("user exsits");
         if(userExists.length == 0){
             const userData = await db.insert(User).values({
                 email : user?.primaryEmailAddress?.emailAddress,
@@ -24,7 +22,6 @@ export async function POST(req) {
                 user: userData[0].User
             });
         }
-        console.log("verified");
         return NextResponse.json({
             result : userExists[0]
         });
