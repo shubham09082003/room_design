@@ -1,9 +1,12 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Link } from "lucide-react";
 
 export default function Home() {
   return (
     <div>
-      hi there!
+        <Link path="/dashboard">
+          <Button>Move to Dashboard</Button>
+        </Link>
     </div>
   )
 }
