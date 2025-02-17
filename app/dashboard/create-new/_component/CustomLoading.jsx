@@ -11,7 +11,7 @@ function CustomLoading({loading}) {
       <AlertDialogContent>
         <div className="bg-white flex justify-center my-10 items-center">
             <Image src={'/loading.gif'} alt="loading" width={100} height={100}/>
-            <h2 className="text-2xl font-bold">Regenerating your room design... Don't refresh the page</h2>
+            <h2 className="text-2xl font-bold text-white">Regenerating your room design... Don't refresh the page</h2>
         </div>
       </AlertDialogContent>
     </AlertDialog>

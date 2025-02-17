@@ -11,11 +11,11 @@ function Header() {
     const {userDetail, setUserDetail} = useContext(UserDetailContext);
     
   return (
-    <div className = "p-5 shadow-md flex justify-between items-center">
+    <div className = "p-5 shadow-lg flex justify-between items-center w-[90%] mx-auto rounded-lg">
         <Link href='/dashboard'>
         <div className='flex items-center gap-2'>
             <Image src="/logo.svg" alt="logo" width={40} height={40}/>
-            <h2 className='font-bold text-lg'>
+            <h2 className='font-bold text-lg text-white'>
 
                 Room Design
             </h2>
@@ -23,10 +23,6 @@ function Header() {
         </Link>
 
         <Button variant="ghost" className="rounded-full text-primary">Buy More Credits</Button>
-
-
-
-
         <div className='flex items-center gap-7'>
             <div className='flex gap-2 p-1 items-center bg-slate-200 px-3 rounded-full'>
                 <Image src="/star.png" alt="user" width={20} height={20}/>

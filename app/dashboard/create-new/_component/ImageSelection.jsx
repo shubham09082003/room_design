@@ -14,7 +14,7 @@ function ImageSelection({selectedImage}) {
 
   return (
     <div>
-        <label>Select Image of your room</label>
+        <label className='text-white'>Select Image of your room</label>
         <div className='mt-3'>
             <input type='file' accept='image/*' id='upload-image' style={{display: 'none'}} onChange={handleImageUpload}/>
             <label htmlFor='upload-image'>
