@@ -3,7 +3,7 @@ import { Link } from "lucide-react";
 import Header from "./_component/Header";
 import HomeDiv from "./_component/HomeDiv";
 import Work from "./_component/Work";
-import Stats from "./_component/stats";
+import Stats from "./_component/Stats";
 import Footer from "./_component/Footer";
 export default function Home() {
   return (
